@@ -1,0 +1,15 @@
+{
+  "Name": "Omofoloarin",
+  "Age": 17,
+  "Courses": [
+    "Python",
+    "Data Science",
+    "Web Development"
+  ],
+  "Grade": {
+    "Python": "A",
+    "Data Science": "B+",
+    "Web Development": "A-"
+  },
+  "is_graduated": false
+}
