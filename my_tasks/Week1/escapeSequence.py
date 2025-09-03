@@ -1,0 +1,15 @@
+print("Line1\nLine2")
+print("Item1\tItem2")
+print("He said,\"Hello\"")
+print("It\'s Python!")
+print('It\'s Python!')
+print("Welcome to Python\nLet's learn together")
+print("Name\tAge\tLocation")
+print("Aisha\t25\tLagos")
+print("She said, \"Hello there!\'")
+print('It\'s a sunny day.')
+print("     0 \n    000 \n   00000 \n  0000000 \n 000000000 \n00000000000")
+print("    *  \n   ***  \n  *****\n *******\n*********")
+print("          $\n         $$$ \n" \
+"")
+

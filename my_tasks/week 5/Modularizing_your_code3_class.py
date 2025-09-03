@@ -140,8 +140,29 @@ print(Folarin.calculate_cgpa({4.5, 4.9, 5.0}))
 
 #Types of methods: 
 #1 - Instance methods - works with specific student
+university = "OAU"
+    
+def __init__(self, name, course):
+    self.name = name 
+    self.course = course
+def pay_school_fees(self):
+        return f"{self.name} has paid school fees"  
+student1 = Student("Ayo Musa", "SLT")
+student2 = Student("Ife Oye", "Mathematics")
 def pay_school_fees(self):
     return f"{self.name} has paid school fees" #copy to the class function where universty was defined
 
-#2 - class methods - work with level
+#2 - class methods - work with class-level data
+@classmethod
+def get_univeraity(cls):
+    return cls.university
 
+#3 - Static methods: This does not need object or class data
+@staticmethod
+def academic_calendar():
+    return "Academic session runs from September to July"
+
+#Relationship between  attributes and methods
+    #-Atttributes store the data while methods use and modify the data.
+
+class Bank
