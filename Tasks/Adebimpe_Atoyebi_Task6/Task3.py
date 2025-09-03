@@ -1,7 +1,0 @@
-seatNo = set(range (1, 51))
-print("Kindly book a seat:")
-bookedseat = int(input(f"book a seat{seatNo}: "))
-seatNo.remove(bookedseat)
-seatNo.remove(32)
-seatNo.remove(1)
-print(seatNo)

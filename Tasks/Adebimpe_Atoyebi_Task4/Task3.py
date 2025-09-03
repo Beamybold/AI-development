@@ -1,6 +1,0 @@
-print("Enter a sentence:")
-sentence = input("Enter a sentence: ")
-Nsentence = sentence.split()
-# print(sentence. split())
-# print(Nsentence)
-print(len(Nsentence))
