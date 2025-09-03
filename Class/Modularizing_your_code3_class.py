@@ -144,3 +144,4 @@ def pay_school_fees(self):
     return f"{self.name} has paid school fees" #copy to the class function where universty was defined
 
 #2 - class methods - work with level
+
