@@ -49,70 +49,69 @@
 #It defines what to do if an error occcurs inside try
 #It can catch specific errors or all errors
 
-#This is a specific exception
-try:
-    x = 10 / 0
-except ZeroDivisionError:
-    print("Cannot divide by zero.")
-#This is a case of multiple exception
-try:
-    number = int("abc") #ValueError
-    result = 10 / 0     #ZeroDivisionEror
+# #This is a specific exception
+# try:
+#     x = 10 / 0
+# except ZeroDivisionError:
+#     print("Cannot divide by zero.")
+# #This is a case of multiple exception
+# try:
+#     number = int("abc") #ValueError
+#     result = number / 0     #ZeroDivisionEror
 
-except ValueError:
-    print("Invalid conversion to integer")
+# except ValueError:
+#     print("Invalid conversion to integer")
 
-except ZeroDivisionError:
-    print("Cannot divide by zero.")
+# except ZeroDivisionError:
+#     print("Cannot divide by zero.")
 
 
-#the finally block always un whethe an error occured or not.
-#It is useful for cleanup tasks (e.g closing files and releasing resouces)
+# #the finally block always un whethe an error occured or not.
+# #It is useful for cleanup tasks (e.g closing files and releasing resouces)
 
-try: 
-    f = open("sample.txt", "r")
-    content = f. read() 
+# try: 
+#     f = open("sample.txt", "r")
+#     content = f. read() 
 
-except FileNotFoundError:
-    print("File not found.")
+# except FileNotFoundError:
+#     print("File not found.")
 
-finally:
-    print("Closing file if it was opened,")
+# finally:
+#     print("Closing file if it was opened,")
 
-#example
-balance = 5000 #(starting balance)
-print("Welcome to the ATM")
-amount  = input("Enter amount to withdraw: ")
+# #example
+# balance = 5000 #(starting balance)
+# print("Welcome to the ATM")
+# amount  = input("Enter amount to withdraw: ")
 
-try:
-    amount = float(amount)
-    #convert input to number
+# try:
+#     amount = float(amount)
+#     #convert input to number
 
-    if amount > balance:
-        raise ValueError
-        ("Insufficient funds.")
+#     if amount > balance:
+#         raise ValueError("Insufficient funds.")
 
-    balance -= amount
-    print("Withdrawal successful. New balance: ₦", balance)
+#     balance -= amount
+#     print("Withdrawal successful. New balance: ₦", balance)
 
-except ValueError as e:
-    print("Error:", e)
+# except ValueError as e:
+#     print("Error:", e)
 
-except Exception as e:
-    print("Unexpected error:", e)
+# except Exception as e:
+#     print("Unexpected error:", e)
 
-finally:
-    print("Transaction session closed.")
+# finally:
+#     print("Transaction session closed.")
 
-"""if user enters 2000; withdrawal successful. New balance: ₦3000.0
-Transaction session closed.
+# """if user enters 2000; withdrawal successful. New balance: ₦3000.0
+# Transaction session closed.
 
-if user enters 6000 
-- Error: Insufficient funds.
-- Transaction session closed.
-if user enters abc
- - Error: could not convert string to float: 'abc'
- - Transaction session closed."""
+# if user enters 6000 
+# - Error: Insufficient funds.
+# - Transaction session closed.
+# if user enters abc
+#  - Error: could not convert string to float: 'abc'
+#  - Transaction session closed."""
 
 #semantic errors are mostly logic mistakes
 #the code runs without crashing but the output is logically wrong
