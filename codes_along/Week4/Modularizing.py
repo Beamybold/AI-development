@@ -31,21 +31,44 @@
 #     b. Type conversion functions: int(), float(), str(), bool(), list(), dict(), tuple(), set()....
 
 # c. Mathematical functions: 
-#     abs()-absolute value
-#     pow(x, y)- x raised to power y
-#     round() - round nos to the defined dp
+#     abs()- absolute value
+# num = -12
+# print(abs(num)) #12
+# #     pow(x, y)- x raised to power y
+# print(pow(4, 2))
+# #     round() - round nos to the defined dp
+# num = 3.68554
+# print(round(num, 3)) #3.686
+# import math
+# num =[2.3, 4.5, 2.4, 7.8]
+# for n in num:
+#     print(math.ceil(n)) #to round up to nearest whole number
+#     print(min(num))
+#     print(max(num))
+
 #     min(), max() - find smallest/largest
 
 # d. sequence and collection functions:
 #     len()- length of a sequence
-#     sum()- sum of elements
+# print(len("Iwa lewa")) #it also counts spaces with the char len
+# #     sum()- sum of elements
+num = (3, 1, 4, 87, 3, 5)
+
+# print(sorted(num, reverse=True)) #to sort stings in a list too, to reverse use reverse True with it
+for i, n in enumerate(num): #To list out on line 
+    print(i+1,  n)
+# print(sum(num))
+# print(type(23.90))
 #     sorted- sort items
 #     enumerate()- track index and value
 
 # e. Utility functions:
 #     type()- show the type of an obj(variables, datatypes, data structures, functions, classes)
 #     id()- returns unique ID of obj in memory
-#     help()- documentation about an obj
+# id = id("good")
+# print(id)
+# #     help()- documentation about an obj
+# print(help(num))
 # f.  Special built-ins:
 #     range()- generates a sequence of nos
 #     zip()- combines 2 lists elements in a sequence
@@ -56,16 +79,17 @@
 # for i in range (5):
 #     print(i) #0, 1, 2, 3, 4
 
-# #zip()
+# #zip() to add 2 list
 # names = ["Esther", "Precious", "Kennie"]
 # scores = [45, 89, 32]
 # for n, s in zip(names, scores): 
 #     print(n, "scored", s) #Esther scored 45 .....
 
+
 # #map()
-# nums = [1, 2, 3, 4]
-# squared = list(map(lambda x: x**2, nums))
-# print(squared) #1, 4, 9, 16
+nums = [1, 2, 3, 4]
+squared = list(map(lambda x: x**2, nums)) 
+print(squared) #1, 4, 9, 16
 
 # even_nums = list(filter(lambda x: x % 2 == 0, nums))
 # print(even_nums) #2, 4

@@ -19,7 +19,7 @@
 #                         uni_choice1 = input("Enter your University first choice: ").upper()
 #                         uni_choice2 = input("Enter your University second choice: ").upper()
 #                         uni_choice3 = input("Enter your University third choice: ").upper()
-#                         if uni_choice1 == "UNILAG":
+#               z          if uni_choice1 == "UNILAG":
 #                             o_level = input("Do you have an O'level result from one sitting ('Yes' or 'No'): ").lower()
 #                             if o_level == "yes":
 #                                 o_level_subjects = input("Enter five relevant subjects including Maths and English: ").split()
